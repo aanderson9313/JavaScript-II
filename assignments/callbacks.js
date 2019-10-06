@@ -72,7 +72,7 @@ multiplyNums(2,5, function(x, y) {
 console.log(x * y);
 });
 
-function contains(item, list, cb) {
+function contains(items, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
 if(list.includes(items)){
@@ -81,8 +81,8 @@ if(list.includes(items)){
   return cb(false);
 }
 }
-contains('Pencil', items, function(result){
-  console.log(result);
+contains(items, "Pencil", function(contains){
+  console.log(contains);
 });
 
 /* STRETCH PROBLEM */
